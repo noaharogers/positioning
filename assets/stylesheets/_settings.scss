@@ -1,0 +1,25 @@
+// Font Weights
+$regular: 400;
+$bold: 700;
+
+// Header Font
+$header-font: $bold 100%/1.3 "proxima-nova", sans-serif;
+
+// Body Font
+$body-font: $regular 110%/1.5 "proxima-nova", sans-serif;
+
+// Colors
+$black:          #333;
+$green:          #49ab4c;
+$light-gray:     #f7f7f7;
+$white:          #fff;
+$yellow:         #f9fdd9;
+
+// Border Color
+$border-light:   #f3f3f3;
+
+// Border Radius
+$border-radius: 4px;
+
+// Medium Screens
+$medium: "(min-width: 640px)";

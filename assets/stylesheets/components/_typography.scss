@@ -1,0 +1,30 @@
+/* ===========================================================
+   Typography
+   =========================================================== */
+
+h1, h2, h3, h4 {
+  font: $header-font;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.6rem; }
+
+h3 { font-size: 1.2rem; }
+
+p, ul {
+  margin: 0 0 1rem;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+/* ===========================================================
+   Links
+   =========================================================== */
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

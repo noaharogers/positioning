@@ -1,0 +1,28 @@
+/* ===========================================================
+   Project
+   =========================================================== */
+
+.section-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.positioning-list, .footer-list { @include clean-list; }
+
+.positioning-list__item {
+  margin-bottom: 2rem;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.notice {
+  background: $yellow;
+  border-radius: $border-radius;
+  font-size: .9rem;
+  padding: 1rem;
+}
+
+.copyright {
+  color: lighten($black, 25%);
+  font-size: .7rem;
+}

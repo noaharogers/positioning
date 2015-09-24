@@ -1,0 +1,126 @@
+/* ===========================================================
+   Example Box Styles
+   =========================================================== */
+
+.example {
+  @extend %clearfix;
+  background: $light-gray;;
+  border-radius: $border-radius;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.example--large { height: 200px; }
+
+.example--dark { background: lighten($black, 6%); }
+
+.example__column {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type { margin-bottom: 0; }
+
+  @media #{$medium} {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 3%;
+    width: 48.5%;
+
+    &:first-of-type { margin-left: 0; }
+  }
+}
+
+.example__column--dashed-border {
+  background: darken($light-gray, 3%);
+  border: 3px dashed darken($light-gray, 15%);
+  display: flex;
+  display: -webkit-flex;
+  overflow: hidden;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.example__title {
+  text-align: center;
+
+  &:last-of-type { margin-bottom: 1rem; }
+}
+
+/* ===========================================================
+   Example modifiers
+   =========================================================== */
+
+.z-index-1 { z-index: 1; }
+
+.z-index-2 { z-index: 2; }
+
+/* ===========================================================
+   Example Images
+   =========================================================== */
+
+.yoshi {
+  background: url('../images/yoshi.png');
+  height: 71px;
+  margin: 1rem;
+  position: fixed;
+  width: 55px;
+  z-index: 9999;
+}
+
+.mario {
+  background: url('../images/mario.png');
+  height: 258px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.mario-alt {
+  background: url('../images/mario2.png');
+  height: 258px;
+  width: 300px;
+}
+
+.mario-relative {
+  background: url('../images/mario2.png');
+  height: 258px;
+  position: relative;
+  width: 300px;
+  right: 0;
+}
+
+.bowser {
+  background: url('../images/bowser.png');
+  height: 258px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.bowser-absolute {
+  background: url('../images/bowser.png');
+  height: 258px;
+  position: absolute;
+  width: 300px;
+  left: 125px;
+}
+
+.luigi {
+  background: url('../images/luigi.png');
+  height: 258px;
+  position: absolute;
+  width: 300px;
+}
+
+.star {
+  background: url('../images/star.png') no-repeat;
+  display: inline-block;
+  height: 64px;
+  width: 65px;
+}
+
+.star2 {
+  background: url('../images/star2.png');
+  height: 258px;
+  position: relative;
+  width: 300px;
+}

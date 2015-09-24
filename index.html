@@ -1,0 +1,160 @@
+---
+layout: default
+title: Positioning
+---
+<span class="yoshi"></span>
+
+<section>
+  <div class="container">
+    <p>There are four types of basic positioning properties. These properties give us a lot of control over our elements by allowing us to pick where we want to move them. Some of these elements stay within the normal flow of our HTML document, while others are taken out, allowing us to move them virtually wherever we want.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <ul class="positioning-list">
+      <li class="positioning-list__item">
+        <h3>Static</h3>
+        <p>This is the default positioning property. A static property keeps your element within the normal flow of your HTML document and does not respond to top, right, bottom and left properties.</p>
+      </li>
+      <li class="positioning-list__item">
+        <h3>Relative</h3>
+        <p>A relative positioning property works very similar to static in the sense that it will not take your element out of the normal flow of your HTML document. The biggest difference between a static and a relative positioned element is that an element that has position of relative responds to top, right, bottom and left properties.</p>
+      </li>
+      <li class="positioning-list__item">
+        <h3>Absolute</h3>
+        <p>Elements with an absolute positioning are taken out of the normal flow of your HTML document and are "attached" to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using top, right, bottom and left properties.</p>
+        <p>One thing to remember about absolute is that if it is not nested within a relative or absolute positioned element it is "attached" to the document body.</p>
+      </li>
+      <li class="positioning-list__item">
+        <h3>Fixed</h3>
+        <p>An element with a fixed position is essentially anchored to a certain spot within the user's viewport. Although not common, a fixed position element can be useful. The fixed element will remain in its specified location even when the user scrolls up and down the page or resizes the browser window.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Examples</h2>
+    <div class="example">
+      <div class="example__column">
+        <div class="mario"></div>
+        <h3 class="example__title margin-top">Parent</h3>
+        <p>Mario will represent a parent element. A parent element contains children elements.</p>
+      </div>
+      <div class="example__column">
+        <div class="bowser"></div>
+        <h3 class="example__title margin-top">Child</h3>
+        <p>Bowser will represent a child element. Child elements are contained within parent elements.</p>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__column">
+        <h3 class="example__title">Child: Static</h3>
+        <h3 class="example__title">Parent: Static</h3>
+        <p>Here we have our child element nested within our parent element. This ensures that the child element will be the top most <q>layer</q>. All elements are positioned as static by default.</p>
+      </div>
+      <div class="example__column example__column--dashed-border">
+        <div class="mario">
+          <div class="bowser"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example__column">
+        <h3 class="example__title">Child: Relative</h3>
+        <h3 class="example__title">Parent: Absolute</h3>
+        <p>Changing the positioning type and adding left and right properties to our elements give us even more control of where we want to place them.</p>
+      </div>
+      <div class="example__column example__column--dashed-border">
+        <div class="mario-relative">
+          <div class="bowser-absolute"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="special">
+  <div class="container">
+    <h1>Why is Yoshi's egg following me?</h1>
+    <p>The egg in the top-right corner is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewport.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">z-index</h2>
+    <p>The z-index property controls the stacking order of positioned elements, allowing them to overlap one another.</p>
+    <div class="example">
+      <div class="example__column example__column--dashed-border">
+        <div class="luigi z-index-2"></div>
+        <div class="star2 z-index-1"></div>
+      </div>
+      <div class="example__column">
+        <p>In this situation the star is behind Luigi. This is because the star has a z-index that is less than Luigi.</p>
+        <p class="notice"><strong>Tip:</strong> Think of z-index as layers, the higher the number associated with z-index, the greater priority for it to be the top-most layer.</p>
+      </div>
+    </div>
+    <div class="example">
+      <div class="example__column example__column--dashed-border">
+        <div class="luigi z-index-1"></div>
+        <div class="star2 z-index-2"></div>
+      </div>
+      <div class="example__column">
+        <p>Swapping the z-index of the elements reverses the order, putting the star on top.</p>
+        <p class="notice"><strong>Remember:</strong> Take nesting in to account when using z-index. If one element is nested within another, it can never have a higher z-index than it's parent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <h2 class="section-title">Flexbox</h2>
+    <p>Not considered one of the basic properties, the flexbox layout is a CSS3 tool that was created to improve control over elements within a container. Flexbox can be really useful when aligning or changing the direction and order of child elements within a container.</p>
+    <p>Here we have three stars that have an added <code>display: inline-block</code> with default positioning.</p>
+
+    <div class="example example--dark">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </div>
+
+    <p>Using flexbox we can influence the behavior of our stars just by a few properties to our parent container.</p>
+
+    <div class="example example--dark example--flex-space-between">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </div>
+
+    <p>By adding <code>display: flex</code> and <code>justify-content: space-between</code> we are able to display our flex items with equal spacing betwen them. When using space-between the first and last  items are aligned to the edges of the parent container.</p>
+
+    <div class="example example--dark example--flex-end">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </div>
+
+    <p>This example demonstrates <code>justify-content: flex-end</code>. With this property all flex-items are pushed to the end of the container.</p>
+
+    <p>Another nice feature of flexbox is that it gives us the ability to easily vertically align our flex items. Let's look at an example where the container has a fixed height.</p>
+
+    <div class="example example--large example--dark example--flex-align">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </div>
+
+    <p class="margin-top">Adding <code>align-items: center</code> and <code>justify-content: space-between</code> we can create something where our flex-items are vertically aligned, centered and have equal spacing around them.</p>
+    <p>Recently I made a small <a href="/2015/08/09/flexbox.html">blog post</a> about the advtanges and disadvantages of flexbox. Flexbox is not perfect, but it sure does give us a few simple ways to accomplish some otherwise tedious tasks.</p>
+
+  </div>
+</section>

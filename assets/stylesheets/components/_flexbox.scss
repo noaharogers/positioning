@@ -1,0 +1,26 @@
+/* ===========================================================
+   Flexbox
+   =========================================================== */
+
+.example--flex-space-between {
+  -webkit-justify-content: space-between;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+.example--flex-end {
+  -webkit-justify-content: flex-end;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
+}
+
+.example--flex-align {
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}

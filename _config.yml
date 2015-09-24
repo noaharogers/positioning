@@ -1,0 +1,11 @@
+# Site settings
+title: Positioning II
+description: A focus on positioning properties.
+baseurl: "/positioning"
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
