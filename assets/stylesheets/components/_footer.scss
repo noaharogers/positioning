@@ -1,10 +1,12 @@
 /* ===========================================================
-   Header
+   Footer
    =========================================================== */
 
 footer {
  background: $white;
  color: $black;
+ position: relative;
+ z-index: 9999;
 }
 
 footer .container { padding: 2rem 0; }
