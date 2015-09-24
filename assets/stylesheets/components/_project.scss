@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.positioning-list, .footer-list { @include clean-list; }
+.positioning-list { @include clean-list; }
 
 .positioning-list__item {
   margin-bottom: 2rem;
