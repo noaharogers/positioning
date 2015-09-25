@@ -26,9 +26,12 @@ body {
 
 .special {
   background: $green;
+  background: -webkit-linear-gradient(left, darken($green, 5%), $green, darken($green, 5%));
+  background: -moz-linear-gradient(left, darken($green, 10%), $green);
   color: $white;
   font-size: 1.1rem;
   padding: 2rem 0;
+  text-align: center;
 }
 
 .dark {
@@ -52,11 +55,11 @@ body {
    Code
    =========================================================== */
 
-   code {
-     background: lighten($black, 6%);
-     border-radius: $border-radius;
-     color: $light-gray;
-     font-family: Consolas, "Liberation Mono", Courier, monospace;
-     font-size: .8rem;
-     padding: .2rem .5rem;
-   }
+code {
+  background: lighten($black, 6%);
+  border-radius: $border-radius;
+  color: $light-gray;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: .8rem;
+  padding: .2rem .5rem;
+}
