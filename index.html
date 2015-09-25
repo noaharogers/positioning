@@ -49,7 +49,6 @@ title: Positioning
         <p>Bowser will represent a child element. Child elements are contained within parent elements.</p>
       </div>
     </div>
-
     <div class="example">
       <div class="example__column">
         <h3 class="example__title">Child: Static</h3>
@@ -62,7 +61,6 @@ title: Positioning
         </div>
       </div>
     </div>
-
     <div class="example">
       <div class="example__column">
         <h3 class="example__title">Child: Relative</h3>
@@ -75,14 +73,13 @@ title: Positioning
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <section class="special">
   <div class="container">
     <h1>Why is Yoshi's egg following me?</h1>
-    <p>The egg in the top-left corner is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewport.</p>
+    <p>The egg in the top-left corner is set to a fixed position. This property allows an element to remain fixed within an area of the user's viewport.</p>
   </div>
 </section>
 
@@ -118,33 +115,25 @@ title: Positioning
     <h2 class="section-title">Flexbox</h2>
     <p>Not considered one of the basic properties, the flexbox layout is a CSS3 tool that was created to improve control over elements within a container. Flexbox can be really useful when aligning or changing the direction and order of child elements within a container.</p>
     <p>Here we have three stars that have an added <code>display: inline-block</code> with default positioning.</p>
-
     <div class="example example--dark">
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
     </div>
-
     <p>Using flexbox we can influence the behavior of our stars just by a few properties to our parent container.</p>
-
     <div class="example example--dark example--flex-space-between">
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
     </div>
-
     <p>By adding <code>display: flex</code> and <code>justify-content: space-between</code> we are able to display our flex items with equal spacing betwen them. When using space-between the first and last  items are aligned to the edges of the parent container.</p>
-
     <div class="example example--dark example--flex-end">
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
     </div>
-
     <p>This example demonstrates <code>justify-content: flex-end</code>. With this property all flex-items are pushed to the end of the container.</p>
-
     <p>Another nice feature of flexbox is that it gives us the ability to easily vertically align our flex items. Let's look at an example where the container has a fixed height.</p>
-
     <div class="example example--large example--dark example--flex-align">
       <span class="star"></span>
       <span class="star"></span>
@@ -152,9 +141,7 @@ title: Positioning
       <span class="star"></span>
       <span class="star"></span>
     </div>
-
     <p class="margin-top">Adding <code>align-items: center</code> and <code>justify-content: space-between</code> we can create something where our flex-items are vertically aligned, centered and have equal spacing around them.</p>
     <p>Recently I made a small <a href="/2015/08/09/flexbox.html">blog post</a> about the advtanges and disadvantages of flexbox. Flexbox is not perfect, but it sure does give us a few simple ways to accomplish some otherwise tedious tasks.</p>
-
   </div>
 </section>
