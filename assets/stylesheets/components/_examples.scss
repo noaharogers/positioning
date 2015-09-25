@@ -62,9 +62,10 @@
 .yoshi {
   background: url('../images/yoshi.png');
   height: 71px;
-  margin: .5rem;
   position: fixed;
   width: 55px;
+  top: 1rem;
+  right: 1rem;
   z-index: 9999;
 }
 

@@ -5,6 +5,8 @@
 header {
  background: $black;
  color: $white;
+ position: relative;
+ z-index: 99998;
 }
 
 header .container { padding: 2rem 0; }
